@@ -1,0 +1,10 @@
+<form method="POST">
+	{% csrf_token %}
+	<input type="text" name="Mobilenumber">
+	<input type="submit" value="submit">
+</form>
+{{ object_file }}
+{{ object_file.user_mails }}
+{{ object_file.user_numbers }}
+{{ object_file.user_elements }}
+{{ object_file.user_messages }}

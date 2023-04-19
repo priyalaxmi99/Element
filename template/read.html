@@ -1,0 +1,20 @@
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Phone</th>
+    <th>Element</th>
+    <th>Message</th>
+  </tr>
+
+  	{% for person in object_readall %}
+	  <tr>
+	    <td>{{ person.user_names }}</td>
+	    <td>{{ person.user_mails }}</td>
+	    <td>{{ person.user_numbers }}</td>
+	    <td>{{ person.user_elements }}</td>
+	    <td>{{ person.user_messages }}</td>
+	  </tr>
+	{% endfor %}
+</table>
+
